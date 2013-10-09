@@ -1,6 +1,10 @@
 body {
-  padding: 100px 0;
+  padding: 60px 0;
   background-color: #333;
+}
+
+.nav > li {
+    float: left!important;
 }
 
 .cap-em-text { font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-transform: uppercase; }
@@ -10,7 +14,7 @@ body {
 }
 
 .tell-me-when-form {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 #notify-alert-thank {
