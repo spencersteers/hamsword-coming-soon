@@ -12,16 +12,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
+        <p class="text-muted text-center">COMING SOON</p>
         <div class="jumbotron">
           <div class="container">
             <h1>Hey, I'm Hamsword</h1>
-            <p class="lead">I have been coaching video games for over 6 years. This website will provide you with top quality coaches and videos in order to help you to become a better player. You will be able to hire me or others to help you try and get you to the top. </p>
-            <form role="form" id="tell-me-when">
+            <p class="lead">I have been coaching players competitively for over 6 years.</p>
+            <hr>
+            <p>My goal with hamsword.com is to train and educate any League player to perform at their absolute <strong>best</strong>. Soon this website will be home to top quality coaching, videos and League strategy to get you to the top.</p>
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe"
+            style="display:none;" onload="if(submitted)
+            {window.location='/#';}"></iframe>
+            <form class="tell-me-when-form" action="https://docs.google.com/forms/d/1mTjL0X3vkzfQix9mjJLSw0WQT9WAU1qr3s8U46mPlRA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+              <p>Be sure to drop your email below and check back soon.</p>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email" class="form-control" placeholder="Email" name="entry.976312731" id="entry_976312731">
               </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Tell Me When!</button>
+              <button type="submit" id="notify-submit" class="btn btn-success btn-lg btn-block">Notify Me When The Site Is Live!</button>
             </form>
+            <div class="alert alert-block alert-success fade in" id="notify-alert-thank">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <h4 class="text-center">Thank's for your interest!</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -59,6 +71,9 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("[data-toggle='tooltip']").tooltip();
+    });
+    $("#notify-submit").click(function() {
+      $("#notify-alert-thank").show();
     });
   </script>
 </body>
